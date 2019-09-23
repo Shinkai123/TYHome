@@ -22,7 +22,7 @@ Pod::Spec.new do |spec|
 
   spec.author             = { "tyh" => "1210480377@qq.com" }
   spec.swift_version = '4.2'
-  spec.ios.deployment_target = "8.0"
+  spec.ios.deployment_target = "9.0"
   spec.source       = { :git => "https://github.com/Shinkai123/TYHome.git", :tag => spec.version.to_s }
 
   spec.source_files  = "TYHomeMoudle/Classes/Extension/*{.swift}"
@@ -31,6 +31,6 @@ Pod::Spec.new do |spec|
   spec.dependency 'CTMediator'
 
 
-  
+
 
 end

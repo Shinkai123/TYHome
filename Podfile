@@ -7,4 +7,6 @@ target 'TYHome' do
 
   # Pods for TYHome
   pod 'CTMediator'
+
+  pod 'Alamofire'
 end

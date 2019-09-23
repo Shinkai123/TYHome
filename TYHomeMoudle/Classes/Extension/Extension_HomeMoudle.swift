@@ -7,7 +7,8 @@
 //
 
 import UIKit
+import CTMediator
 
-class Extension_HomeMoudle: NSObject {
-
+public extension CTMediator {
+    
 }

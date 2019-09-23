@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "TYHomeMoudle"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.4"
   spec.summary      = "TYHomeMoudle."
 
 
@@ -29,6 +29,7 @@ Pod::Spec.new do |spec|
 
   spec.static_framework = true
   spec.dependency 'CTMediator'
+  spec.dependency 'Alamofire'
 
 
 

@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FD7CBEDBC05FCBBF398EC13 /* Pods_TYHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F541E5C73169CBA71323513B /* Pods_TYHome.framework */; };
 		2B0837D62338B0C1001AF7CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0837D52338B0C1001AF7CC /* AppDelegate.swift */; };
 		2B0837D82338B0C1001AF7CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0837D72338B0C1001AF7CC /* ViewController.swift */; };
 		2B0837DB2338B0C1001AF7CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B0837D92338B0C1001AF7CC /* Main.storyboard */; };
@@ -26,6 +27,9 @@
 		2B0837E12338B0C2001AF7CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B0837E82338B346001AF7CC /* TYHomeMoudle.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TYHomeMoudle.podspec; sourceTree = "<group>"; };
 		2B0837ED2338B78F001AF7CC /* Extension_HomeMoudle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_HomeMoudle.swift; sourceTree = "<group>"; };
+		4D28404121E0206318C33F8E /* Pods-TYHome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYHome.release.xcconfig"; path = "Target Support Files/Pods-TYHome/Pods-TYHome.release.xcconfig"; sourceTree = "<group>"; };
+		F541E5C73169CBA71323513B /* Pods_TYHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TYHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5C6DF02178C2007A1B60EA5 /* Pods-TYHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYHome.debug.xcconfig"; path = "Target Support Files/Pods-TYHome/Pods-TYHome.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,12 +37,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FD7CBEDBC05FCBBF398EC13 /* Pods_TYHome.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		099A0947C7A158169FCCA285 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5C6DF02178C2007A1B60EA5 /* Pods-TYHome.debug.xcconfig */,
+				4D28404121E0206318C33F8E /* Pods-TYHome.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		2B0837C92338B0C1001AF7CC = {
 			isa = PBXGroup;
 			children = (
@@ -46,6 +60,8 @@
 				2B0837E82338B346001AF7CC /* TYHomeMoudle.podspec */,
 				2B0837D42338B0C1001AF7CC /* TYHome */,
 				2B0837D32338B0C1001AF7CC /* Products */,
+				099A0947C7A158169FCCA285 /* Pods */,
+				E1F3F64F88935CF0CDE1FCEA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,8 +97,8 @@
 		2B0837EA2338B34B001AF7CC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				2B0837EC2338B36C001AF7CC /* Target */,
 				2B0837EB2338B357001AF7CC /* Extension */,
+				2B0837EC2338B36C001AF7CC /* Target */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -102,6 +118,14 @@
 			path = Target;
 			sourceTree = "<group>";
 		};
+		E1F3F64F88935CF0CDE1FCEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F541E5C73169CBA71323513B /* Pods_TYHome.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B0837E42338B0C2001AF7CC /* Build configuration list for PBXNativeTarget "TYHome" */;
 			buildPhases = (
+				9A773B7D51C5A483088606C4 /* [CP] Check Pods Manifest.lock */,
 				2B0837CE2338B0C1001AF7CC /* Sources */,
 				2B0837CF2338B0C1001AF7CC /* Frameworks */,
 				2B0837D02338B0C1001AF7CC /* Resources */,
+				54AAA993FBB9EF148D6AA664 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -168,6 +194,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54AAA993FBB9EF148D6AA664 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TYHome/Pods-TYHome-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TYHome/Pods-TYHome-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TYHome/Pods-TYHome-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A773B7D51C5A483088606C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TYHome-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2B0837CE2338B0C1001AF7CC /* Sources */ = {
@@ -320,6 +388,7 @@
 		};
 		2B0837E52338B0C2001AF7CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5C6DF02178C2007A1B60EA5 /* Pods-TYHome.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -339,6 +408,7 @@
 		};
 		2B0837E62338B0C2001AF7CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D28404121E0206318C33F8E /* Pods-TYHome.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
